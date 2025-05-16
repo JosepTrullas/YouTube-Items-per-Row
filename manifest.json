@@ -1,0 +1,20 @@
+
+{
+  "manifest_version": 2,
+  "name": "YouTube Items Per Row",
+  "version": "3.0",
+  "description": "Choose how many videos per row on YouTube homepage.",
+  "permissions": ["storage", "https://www.youtube.com/"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
